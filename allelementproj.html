@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+
+
+<!-- 진짜진짜 기초 배운 내용 표로 모아서 함축해보기!!-->
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>종합 프로젝트</title>
+    </head>
+    <body>
+        <h1>종합 프로젝트</h1>
+        <h2>종합 프로젝트</h2>
+        <h3>종합 프로젝트</h3>
+        <h4>종합 프로젝트</h4>
+        <h5>종합 프로젝트</h5>
+        <h6>종합 프로젝트</h6>
+        
+        <hr>
+        <p>
+            여기서부터는 지금까지 배운 내용을 기반으로 표로 만들었습니다.<br>
+            HTML5 + CSS3 + Javascript 웹 프로그래밍 28~89p 내용을 가지고 만들어 봤습니다.<br>
+            이제 시작해볼까요?
+        </p>
+
+        <table border="1">
+            <caption>Each title Content</caption>
+            <thead>
+                <tr><th id="idx">idx</th><th>content1</th><th>content2</th><th>content3</th><th>content4</th></tr>
+            </thead>
+            <tfoot>
+                <tr><th id="foot">마지막 줄</th><th>end</th><th>end</th><th>end</th><th>end</th></tr>
+            </tfoot>
+            <tbody>
+                <tr><td title="문자, 기호, 심볼" id="symbol">1</td><td>10&divide;2=5<br>&quot;hihi&quot; &apos;여기는 그냥 따옴표&apos;<br>&radic;2 = ?</td><td>&lt;br&gt;를 이용해봅시다.</td><td>여기에&nbsp;&nbsp;띄어쓰기가 되고 있죠?</td><td>&amp;a는 참조자일수도 주소연산자일수도 있습니다.</td></tr>
+                <tr><td title="텍스트 꾸미기" id="decor">2</ed><td><b>굵게</b><br><strong>이것도 굵게</strong><br><em>이건 강조</em></td><td><i>멋있게 이텔릭체로</i><br><b><i>한번 중첩해봄</i></b><br><small>한단계 작은 문자임.</small><br><del>줄 긋고 싶어?</del><br><ins>밑줄 긋는 건 까먹었네</ins></td><td>안녕<sup>하세요</sup><sub>지금이 아닌가?</sub></td><td><mark>이것도 까먹었었네.ㅠ 하이리이팅은 마크!!</mark></td></tr>
+                <tr><td title="이미지를 넣어봅시다" id="imgi">3</td><td><img src="apple.png" alt="사과래"></td><td>사이즈 조절해보자<br><img src="banana.png" alt="바나나래" width="100" height="50" ></td><td><img src="no.png" alt="alt속성은 이미지가 없을 때 나오는 말!! 필수속성임!!"></td><td>이번에는 인터넷 이미지url로 이미지를 가져와볼까?<br><img src="https://i.esdrop.com/d/R8EzRnqQLl.png" alt="안나오면 말고!!"></td></tr>
+                <tr>
+                    <td title="List를 사용합시다." id="list">4</td>
+                    <td>
+                        Ordered list
+                        <ol>
+                            <li>이것처럼 번호가 매겨져요</li>
+                            <li>li는 closing이 필요 없어요. 그리고 여러 요소들을 기반으로 &lt;li&gt;이 내부 태그로 묶어야합니당.
+                        </ol>
+                        <ol type="1">
+                            <li> 번호로 매겨보기</li>
+                        </ol>
+                        <ol type="A">
+                            <li> 대문자로 순서 매겨보기</li>
+                        </ol>
+                        <ol type="a">
+                            <li> 소문자로 순서를 매겨볼까요?</li>
+                        </ol>
+                        <ol type="I">
+                            <li> 참 많긴 하네 이번에는 그리스 숫자로</li>
+                        </ol>
+                        <ol type="i">
+                            <li> 빼먹으면 서운하지 작은 문자로</li>
+                        </ol>
+                        따로 매겨보기
+                        <ol>
+                            <li type="1">이게 된다고 해서 한번 해보는 중</li>
+                            <li type="A">진짜 되려나</li>
+                            <li type="a">빠짐없이 해봐야지</li>
+                            <li type="I">안되면 레전드</li>
+                            <li type="i">아직까지는 쉬운데 js가면 어려울 듯 ㅠㅠ</li>
+                        </ol>
+                    </td>
+                    <td>
+                        Unordered list
+                        <ul>
+                            <li>이번에는 순서가 없는 리스트인데요?</li>
+                            <li>진짜로 안매겨지는지 확인해보죠</li>
+                        </ul>
+                        <ul type="disk">
+                            <li>이것도 여러 유형이 있는데 이게 디폴트일걸..</li>
+                        </ul>
+                        <ul type="square">
+                            <li>개인적으로는 이게 제일 마음에 안드는 듯.</li>
+                        </ul>
+                        <ul type="circle">
+                            <li>처음에 disk랑 무슨 차이인가 했음. ㅋ</li>
+                        </ul>
+                    </td>
+                    <td>
+                        Definition list
+                        <dl>
+                            <dt>데피니션 리스트</dt>
+                            <dd>이건 &lt;dl&gt; &lt;dt&gt; &lt;dd&gt; 태그를 쓰는데요? 처음 봤던 태그임</dd>
+                        </dl>
+                    </td>
+                    <td>
+                        Nested List<중첩>
+                        <ol>
+                            <li>각종 재료를 준비한다</li>
+                            <ul>
+                                <li>재료: 라면, 파, 물 등등.. > 여기가 바로 중첩 리스트 부분 조금 다르죠??</li>
+                                <li>한번 더 확인 시켜드림!!</li>
+                            </ul>
+                            <li>끓으면 넣어서 기다린다</li>
+                            <li>맛있게 먹는다.</li>
+                        </ol>
+                    </td>
+                </tr>
+                <tr><td rowspan="2" title="table" id="table">5</td><td colspan="2">한번 옆으로 늘려봤는데요 맞을까요?</td><td rowspan="2">이번에는 아래로 병합해보았습니다.</td><td>rowwpan은 아래로 늘리는 거</td></tr>
+                <tr><td>이론상 여기가 table을 시도하는 영역의 맨 왼쪽 아래여야 하는데 과연? 3차 시도</td><td>colspan은 옆으로 늘리는 거</td><td>이건 할때 헷갈리니까 다일단 써놓고 하나씩 지워가는게 좋을 듯.</td></tr>
+                <tr><td title="하이퍼링크임." id="hyper">6</td><td>이런 식으로 텍스트에 링크가 들어갈 수 있구<br><a href="https://www.naver.com">네이버</a></td><td>로컬파일의 경로가 들어갈 수도 있고<br><a href="hello.html">local html file</a></td><td>아니면 이런식으로 img에 하이퍼링크를 걸수도 있음.<a href="https://www.naver.com"><img src="Elvis.png"></a></td><td>하이퍼 링크랑 관련이 없긴 한데경로의 중요성을 보여주려함<br><a href="https://www.naver.com"><img src="media/Elvis.png" alt="잘못된 경로라 안뜨는 거.."></a></td></tr>
+                <tr><td title="브라우저 차이" id="target">7<br>target 속성 사용</td><td>먼저 _blank<br><a href="https://www.naver.com" target="_blank">새 창에서 뜨겠지?</a></td><td>그다음은 _self<br><a href="https://www.naver.com" target="_self">지금 이 창에서 뜰거야</a></td><td>이번에는 _parent<br><a href="https://www.naver.com" target="_parent">여기서는 의미없으나 부모의 창에서 뜨는 거임.</a></td><td>다음은 _top임<a href="https://www.naver.com" target="_top">이건 최상위 부모 창에서 뜨는 거 이것도 의미 없을 걸.</a></td></tr>
+                <tr><td title="마지막은 다운로드" id="download">8</td><td>a의 href의 위치의 파일을 다운로드 한다는 의미로 download 속성을 포함시키면 됨.<br><a href="test.hwp" download>시험파일hwp 다운</a></td><td><a href="chapter9.pdf"> 9장 pdf 다운로드</a></td><td><a href="hello.html" download>html 문서 다운로드</a></td><td><a href="bear.mp4" download>mp4 다운</a></td></tr>
+            </tbody>
+        </table>
+        <hr>
+        <p>
+           이제 여기부터는 표에서는 다루기 힘든 것들을 다뤄보는 시간을 갖겠습니다. <br>
+           확실히 알아보고 싶으면 크롬에서 왼쪽 클릭후 검사를 눌러서 해당 위치에 마우스를 갖다대보시면 영역이 나타나는데 확실히 알 수 있을거에요!
+        </p>
+        <div>1.블럭태그 입니다.</div><div>왜 블록태그인지 알겠죠?</div>
+        <pre>
+            블록태그는 어떤 의미를 하기보다는 여러 태그들을 하나의 컨테이너로 묶는 역할을 합니다.
+        </pre>
+        <span>2.대표적인 인라인태그입니다.</span><span>인라인 태그인지 알겠나요?</span>
+        <pre>
+            인라인태그는 주로 css를 사용하거나 하나의 블록 안에 변경해주고 싶은 요소들을 js를 통해서 변경해줍니다.
+        </pre>
+
+        <pre>
+            그런데 갑자기 나타난 &lt;pre&gt;태그에 놀라셨죠? 이 태그는 개발자가 코드를 작성한 그대로 띄어쓰기와 엔터가 그대로 
+                적용되는 건데요
+                    확인해보세요. 다음은 한번 block tag와 inline tag의 범위와 용도를 확인해볼게요.
+        </pre>
+        <!-- 여기에 나타나는 깨알 주석!! style은 ;로 요소를 나눠주어야 하고 :로 값을 넣어주어야 합니다. 이건 css파일로 따로 빼거나 head에 정의해주기도 합니다.-->
+        <div style="background-color: skyblue;">
+            <p>
+                요즘에 뭐를 어떻게 <span style="color: red;">공부</span>를 해야하는 지 잘 모르겠다. 코딩도 그래도 문법 정도는 풀 수 있다고 생각했는데 그것도 아니고 아직도 많이 부족한데 어떻게 해야할지 모르겠다
+            </p>
+        </div>
+        <br>
+        <br>
+        <hr>
+        <pre>
+            확실히 아시겠죠? 블록단위는 확실히 저렇고 span 태그의 경우에는 해당 블록 내에서 내가 변경해주고 싶은 내용을 js나 css를 통해서 변경해주는 거에요..
+        </pre>
+
+        <p>
+            이제는 마지막으로 배운 것이 바로 id를 이용해서 anchor를 사용하는 건데 내려오면서 은근 슬쩍 써봤는데 눈치 채신분? <br>
+            휴! 이정도면 충분히 내려왔으니 확실히 적용되는 것이 보이실겁니다.<br>
+            여기서부터는 복습겸 anchor로 연결해드리겠습니다<br>
+            복습 끝!!
+
+        </p>
+        <h4>Question</h4>
+        <a href="#idx">다 이해가 안되네 다시 볼까?</a><br>
+        <a href="#foot">표는 된거같고 그 아래가 이해가 안되는데?</a><br>
+        <a href="#symbol">특수 문자를 어떻게 썼는지 다시볼까?</a><br>
+        <a href="#decor">css를 이용하지 않고 기본적으로 텍스트를 꾸밀 수 있는 태그가 뭐지?</a><br>
+        <a href="#imgi">이미지는 어떻게 삽입되었고 src에는 어떤 요소가 들어갈 수 있지?</a><br>
+        <a href="#list">리스트에 무슨 종류가 있고 어떻게 나오는 거지?</a><br>
+        <a href="#table">엑셀 셀병합하는 것처럼 셀을 붙이던데 어떻게 붙이는 거지?</a><br>
+        <a href="#hyper"> a를 이용하면 뭘 어떻게 할 수 있다는 거지? 왜 이미지가 잘 안나오지 경로문제인가?</a><br>
+        <a href="#target"> a 속성중에 target 속성을 이용하면 뭘 할 수 있는거고 각각이 어떻게 되는건데?</a><br>
+        <a href="#download">웹사이트에서 다운로드되는 거 신기하던데 여기서도 되네 어떻게 되는 걸까?</a><br>
+
+    </body>
+</html>
